@@ -14,7 +14,7 @@ OBJCOPY = $(CROSS_COMPILE)objcopy
 # in case make does not have this already defined
 RM ?= rm -f
 
-LDFLAGS = -Tlinker.ld -fno-builtin -nostdlib -lgcc
+LDFLAGS = -Tlinker.ld -fno-builtin -nostdlib
 
 RTL ?= ../rtl
 SOURCES  = tb_lm32_system.v lm32_config.v
