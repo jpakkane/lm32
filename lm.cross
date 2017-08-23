@@ -1,0 +1,20 @@
+# This is very hacky and only works on my machine with the current setup.
+# Change to match your setup.
+
+[binaries]
+c = '/home/jpakkane/HDMI2USB-litex-firmware/build/conda/bin/lm32-elf-gcc'
+cpp = '/home/jpakkane/HDMI2USB-litex-firmware/build/conda/bin/lm32-elf-g++'
+ar = '/home/jpakkane/HDMI2USB-litex-firmware/build/conda/bin/lm32-elf-ar'
+strip = '/home/jpakkane/HDMI2USB-litex-firmware/build/conda/bin/lm32-elf-strip'
+pkgconfig = '/home/jpakkane/HDMI2USB-litex-firmware/build/conda/bin/pkg-config'
+
+[properties]
+root = '/usr/arm-linux-gnueabihf'
+c_args = ['-fno-builtin', '-nostdlib']
+c_link_args = ['-fno-builtin', '-nostdlib']
+
+[host_machine]
+system = 'none'
+cpu_family = 'lm32'
+cpu = 'lm32'
+endian = 'little'
