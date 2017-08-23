@@ -63,3 +63,5 @@ tb_lm32_system = custom_target('tb_lm32_system',
 run_target('sim_hello_world',
   command : [vvp, tb_lm32_system, '+prog=' + prog_src.full_path()],
   depends : prog_src)
+
+subdir('unittests')
